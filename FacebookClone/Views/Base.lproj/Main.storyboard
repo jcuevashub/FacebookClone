@@ -102,7 +102,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="sXZ-gg-XgH" id="3xW-92-WNU"/>
                         <outlet property="passwordTextField" destination="ebE-sL-6GS" id="jtL-iQ-Q3c"/>
-                        <segue destination="fi3-Zu-Wgf" kind="presentation" identifier="home_segue" modalPresentationStyle="fullScreen" id="eSV-WU-L4O"/>
+                        <segue destination="fi3-Zu-Wgf" kind="presentation" identifier="home_segue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="eSV-WU-L4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

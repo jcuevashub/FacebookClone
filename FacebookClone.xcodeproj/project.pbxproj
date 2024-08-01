@@ -14,6 +14,7 @@
 		8BFF93D82C5B1C780059D12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93D72C5B1C780059D12E /* Assets.xcassets */; };
 		8BFF93DB2C5B1C780059D12E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93DA2C5B1C780059D12E /* Base */; };
 		8BFF93E32C5B2BC70059D12E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93E22C5B2BC70059D12E /* Home.storyboard */; };
+		8BFF93E82C5BB6070059D12E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93E72C5BB6070059D12E /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8BFF93DA2C5B1C780059D12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BFF93DC2C5B1C780059D12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BFF93E22C5B2BC70059D12E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8BFF93E72C5BB6070059D12E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		8BFF93CD2C5B1C760059D12E /* FacebookClone */ = {
 			isa = PBXGroup;
 			children = (
+				8BFF93E62C5BB5B50059D12E /* Models */,
+				8BFF93E52C5BB5AA0059D12E /* Controllers */,
+				8BFF93E42C5BB5A20059D12E /* Views */,
 				8BFF93CE2C5B1C760059D12E /* AppDelegate.swift */,
 				8BFF93D02C5B1C760059D12E /* SceneDelegate.swift */,
-				8BFF93D22C5B1C760059D12E /* ViewController.swift */,
-				8BFF93D42C5B1C760059D12E /* Main.storyboard */,
 				8BFF93D72C5B1C780059D12E /* Assets.xcassets */,
 				8BFF93D92C5B1C780059D12E /* LaunchScreen.storyboard */,
 				8BFF93DC2C5B1C780059D12E /* Info.plist */,
-				8BFF93E22C5B2BC70059D12E /* Home.storyboard */,
 			);
 			path = FacebookClone;
+			sourceTree = "<group>";
+		};
+		8BFF93E42C5BB5A20059D12E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF93E22C5B2BC70059D12E /* Home.storyboard */,
+				8BFF93D42C5B1C760059D12E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BFF93E52C5BB5AA0059D12E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BFF93D22C5B1C760059D12E /* ViewController.swift */,
+				8BFF93E72C5BB6070059D12E /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BFF93E62C5BB5B50059D12E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BFF93E82C5BB6070059D12E /* HomeController.swift in Sources */,
 				8BFF93D32C5B1C760059D12E /* ViewController.swift in Sources */,
 				8BFF93CF2C5B1C760059D12E /* AppDelegate.swift in Sources */,
 				8BFF93D12C5B1C760059D12E /* SceneDelegate.swift in Sources */,
