@@ -39,6 +39,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fi3-Zu-Wgf" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="3Yb-rp-o8a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJS-Lb-ehZ">
                                 <rect key="frame" x="146" y="682" width="138" height="35"/>
@@ -136,6 +139,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQi-eO-3mP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="lEN-1q-fWh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="fi3-Zu-Wgf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="i85-4o-92J"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqX-nJ-RBU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="-61"/>
         </scene>
     </scenes>
     <resources>

@@ -13,6 +13,7 @@
 		8BFF93D62C5B1C760059D12E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93D52C5B1C760059D12E /* Base */; };
 		8BFF93D82C5B1C780059D12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93D72C5B1C780059D12E /* Assets.xcassets */; };
 		8BFF93DB2C5B1C780059D12E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93DA2C5B1C780059D12E /* Base */; };
+		8BFF93E32C5B2BC70059D12E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93E22C5B2BC70059D12E /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8BFF93D72C5B1C780059D12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BFF93DA2C5B1C780059D12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BFF93DC2C5B1C780059D12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BFF93E22C5B2BC70059D12E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8BFF93D72C5B1C780059D12E /* Assets.xcassets */,
 				8BFF93D92C5B1C780059D12E /* LaunchScreen.storyboard */,
 				8BFF93DC2C5B1C780059D12E /* Info.plist */,
+				8BFF93E22C5B2BC70059D12E /* Home.storyboard */,
 			);
 			path = FacebookClone;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				8BFF93D82C5B1C780059D12E /* Assets.xcassets in Resources */,
 				8BFF93DB2C5B1C780059D12E /* Base in Resources */,
 				8BFF93D62C5B1C760059D12E /* Base in Resources */,
+				8BFF93E32C5B2BC70059D12E /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
