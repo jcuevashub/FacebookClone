@@ -40,7 +40,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="fi3-Zu-Wgf" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="3Yb-rp-o8a"/>
+                                    <action selector="loginButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZ7-U8-QoU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJS-Lb-ehZ">
@@ -86,6 +86,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SVS-5J-KkH"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="sXZ-gg-XgH" id="3xW-92-WNU"/>
+                        <outlet property="passwordTextField" destination="ebE-sL-6GS" id="jtL-iQ-Q3c"/>
+                        <segue destination="fi3-Zu-Wgf" kind="presentation" identifier="home_segue" modalPresentationStyle="fullScreen" id="eSV-WU-L4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
