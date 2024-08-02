@@ -7,6 +7,15 @@
 
 import UIKit
 
+// 1. Crear modelo Codable (estructura)
+// 2. Utilizar JSONDecoder para serializar Data a Modelo
+
+struct Human: Codable {
+    let user: String
+    let age: Int
+    let isHappy: Bool
+}
+
 class HelpViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -46,16 +55,14 @@ class HelpViewController: UIViewController {
             }
             
             guard let dataFromService = data,
-                  let dictionary = try? JSONSerialization.jsonObject(with: dataFromService, options: []) as? [String: Any] else {
+                  let model: Human = try? JSONDecoder().decode(Human.self, from: dataFromService) else {
                 return
             }
             
             //Importante: TODOS los llamados a la UI, se hacen en el main thread
             DispatchQueue.main.async {
-                let isHappy = dictionary["isHappy"] as? Bool ?? false
-                
-                self.nameLabel.text = dictionary["user"] as? String
-                self.statusLabel.text = isHappy ? "Es feliz!" : "Es triste!"
+                self.nameLabel.text = model.user
+                self.statusLabel.text = model.isHappy ? "Es feliz!" : "Es triste!"
             }
             
         }.resume()
