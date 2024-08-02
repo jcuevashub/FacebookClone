@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6313F0AB178DCB1C52CF90B6 /* Pods_FacebookClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744562E158C098EDC194BCA1 /* Pods_FacebookClone.framework */; };
 		8BFF93CF2C5B1C760059D12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93CE2C5B1C760059D12E /* AppDelegate.swift */; };
 		8BFF93D12C5B1C760059D12E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93D02C5B1C760059D12E /* SceneDelegate.swift */; };
 		8BFF93D32C5B1C760059D12E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93D22C5B1C760059D12E /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		744562E158C098EDC194BCA1 /* Pods_FacebookClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFF93CB2C5B1C760059D12E /* FacebookClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BFF93CE2C5B1C760059D12E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BFF93D02C5B1C760059D12E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		8BFF93E72C5BB6070059D12E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		8BFF93EA2C5C09750059D12E /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		8BFF93EB2C5C09750059D12E /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		CB759F519B54D25EDA190176 /* Pods-FacebookClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookClone.release.xcconfig"; path = "Target Support Files/Pods-FacebookClone/Pods-FacebookClone.release.xcconfig"; sourceTree = "<group>"; };
+		EA5D89CC1058DDC6C80F269C /* Pods-FacebookClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookClone.debug.xcconfig"; path = "Target Support Files/Pods-FacebookClone/Pods-FacebookClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6313F0AB178DCB1C52CF90B6 /* Pods_FacebookClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2333008BCC5FAB0C057221AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D89CC1058DDC6C80F269C /* Pods-FacebookClone.debug.xcconfig */,
+				CB759F519B54D25EDA190176 /* Pods-FacebookClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8BFF93C22C5B1C760059D12E = {
 			isa = PBXGroup;
 			children = (
 				8BFF93CD2C5B1C760059D12E /* FacebookClone */,
 				8BFF93CC2C5B1C760059D12E /* Products */,
+				2333008BCC5FAB0C057221AA /* Pods */,
+				FD6DC9FB2775A6C3992EC487 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +127,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		FD6DC9FB2775A6C3992EC487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744562E158C098EDC194BCA1 /* Pods_FacebookClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BFF93DF2C5B1C780059D12E /* Build configuration list for PBXNativeTarget "FacebookClone" */;
 			buildPhases = (
+				770893233E67299EDBA6950F /* [CP] Check Pods Manifest.lock */,
 				8BFF93C72C5B1C760059D12E /* Sources */,
 				8BFF93C82C5B1C760059D12E /* Frameworks */,
 				8BFF93C92C5B1C760059D12E /* Resources */,
+				C7DFD40D7EDE835065EFD037 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +204,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		770893233E67299EDBA6950F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacebookClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7DFD40D7EDE835065EFD037 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacebookClone/Pods-FacebookClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacebookClone/Pods-FacebookClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FacebookClone/Pods-FacebookClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BFF93C72C5B1C760059D12E /* Sources */ = {
@@ -335,12 +403,14 @@
 		};
 		8BFF93E02C5B1C780059D12E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5D89CC1058DDC6C80F269C /* Pods-FacebookClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XH6RTA62K4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FacebookClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -363,12 +433,14 @@
 		};
 		8BFF93E12C5B1C780059D12E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB759F519B54D25EDA190176 /* Pods-FacebookClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XH6RTA62K4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FacebookClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
