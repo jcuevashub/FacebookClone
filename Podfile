@@ -7,4 +7,5 @@ target 'FacebookClone' do
 
   # Pods for FacebookClone
   pod 'PopupDialog', '~> 1.1'
+  pod 'Alamofire'
 end
