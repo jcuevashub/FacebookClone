@@ -142,18 +142,51 @@
         <!--Ayuda-->
         <scene sceneID="v1z-jZ-eaI">
             <objects>
-                <viewController id="ewG-bZ-Q9E" sceneMemberID="viewController">
+                <viewController id="ewG-bZ-Q9E" customClass="HelpViewController" customModule="FacebookClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dmt-MD-q2d">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Jlu-ua-d4a">
+                                <rect key="frame" x="196.66666666666666" y="187" width="37" height="37"/>
+                                <color key="color" systemColor="systemGreenColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtR-zF-SZb">
+                                <rect key="frame" x="50" y="273" width="330" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqD-pT-ij3">
+                                <rect key="frame" x="161" y="129" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tZP-mT-hYt"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="eqD-pT-ij3" firstAttribute="leading" secondItem="tZP-mT-hYt" secondAttribute="leading" constant="161" id="0Gx-lc-dmc"/>
+                            <constraint firstItem="DtR-zF-SZb" firstAttribute="top" secondItem="Jlu-ua-d4a" secondAttribute="bottom" constant="49" id="DWE-Vo-CVL"/>
+                            <constraint firstItem="tZP-mT-hYt" firstAttribute="bottom" secondItem="DtR-zF-SZb" secondAttribute="bottom" constant="604" id="IJa-CP-aY6"/>
+                            <constraint firstItem="DtR-zF-SZb" firstAttribute="leading" secondItem="tZP-mT-hYt" secondAttribute="leading" constant="50" id="XGI-Bf-lVk"/>
+                            <constraint firstItem="eqD-pT-ij3" firstAttribute="top" secondItem="tZP-mT-hYt" secondAttribute="top" constant="26" id="lLl-se-wTu"/>
+                            <constraint firstItem="DtR-zF-SZb" firstAttribute="centerX" secondItem="Jlu-ua-d4a" secondAttribute="centerX" id="sSt-Dy-VcX"/>
+                            <constraint firstItem="DtR-zF-SZb" firstAttribute="centerX" secondItem="eqD-pT-ij3" secondAttribute="centerX" id="uVk-MA-6c3"/>
+                            <constraint firstItem="DtR-zF-SZb" firstAttribute="centerX" secondItem="Dmt-MD-q2d" secondAttribute="centerX" id="win-yR-6mA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ayuda" id="uX8-Tj-WRd"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Jlu-ua-d4a" id="FvW-Cz-rxQ"/>
+                        <outlet property="nameLabel" destination="eqD-pT-ij3" id="zoy-Uh-5Na"/>
+                        <outlet property="statusLabel" destination="DtR-zF-SZb" id="tLN-XP-MoZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iK3-Tk-cdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1895" y="777"/>
+            <point key="canvasLocation" x="1894.8837209302326" y="776.39484978540781"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rO5-Ds-auJ">
@@ -186,6 +219,9 @@
     </scenes>
     <resources>
         <image name="logo" width="400" height="230"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

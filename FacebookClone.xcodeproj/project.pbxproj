@@ -18,6 +18,7 @@
 		8BFF93E82C5BB6070059D12E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93E72C5BB6070059D12E /* HomeController.swift */; };
 		8BFF93EC2C5C09750059D12E /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BFF93EB2C5C09750059D12E /* TweetTableViewCell.xib */; };
 		8BFF93ED2C5C09750059D12E /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93EA2C5C09750059D12E /* TweetTableViewCell.swift */; };
+		8BFF93EF2C5C9CB40059D12E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF93EE2C5C9CB40059D12E /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8BFF93E72C5BB6070059D12E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		8BFF93EA2C5C09750059D12E /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		8BFF93EB2C5C09750059D12E /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		8BFF93EE2C5C9CB40059D12E /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		CB759F519B54D25EDA190176 /* Pods-FacebookClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookClone.release.xcconfig"; path = "Target Support Files/Pods-FacebookClone/Pods-FacebookClone.release.xcconfig"; sourceTree = "<group>"; };
 		EA5D89CC1058DDC6C80F269C /* Pods-FacebookClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookClone.debug.xcconfig"; path = "Target Support Files/Pods-FacebookClone/Pods-FacebookClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 			children = (
 				8BFF93D22C5B1C760059D12E /* ViewController.swift */,
 				8BFF93E72C5BB6070059D12E /* HomeController.swift */,
+				8BFF93EE2C5C9CB40059D12E /* HelpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BFF93E82C5BB6070059D12E /* HomeController.swift in Sources */,
+				8BFF93EF2C5C9CB40059D12E /* HelpViewController.swift in Sources */,
 				8BFF93D32C5B1C760059D12E /* ViewController.swift in Sources */,
 				8BFF93CF2C5B1C760059D12E /* AppDelegate.swift in Sources */,
 				8BFF93ED2C5C09750059D12E /* TweetTableViewCell.swift in Sources */,
